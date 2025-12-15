@@ -29,3 +29,9 @@ The kind of cool that doesn’t brag—but teaches you things modern stacks care
 
 Trendy? No.
 Respectable? Quietly, yes.
+
+Wanna Initiate?
+```console
+make
+./gp
+```
