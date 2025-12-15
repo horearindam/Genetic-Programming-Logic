@@ -1,52 +1,58 @@
-This doesn’t sound cool in the buzzword sense.
-It’s cool in the basement-lab sense. Solder fumes. Darwin with a segfault.
+# Genetic Program
 
-What makes it cool is that it’s **honest**.
+> "Darwin with a segfault."
 
-There are no frameworks doing you favors.
-No gradients pretending to be insight.
-Just raw C, a tiny world, and evolution colliding with reality until something barely functions.
+This isn't "AI" in the LinkedIn buzzword sense. There are no gradients pretending to be insight. No Python frameworks doing you favors.
 
-You’re not tuning numbers. You’re evolving **behavior**.
-Failure is impossible to ignore—crashes, nonsense, extinction.
-Fitness has to be defined explicitly, and any sloppy thinking is punished immediately.
-Everything happens at the intersection of systems, interpreters, and optimization, with no guardrails and no mercy.
+This is computational natural selection with the training wheels ripped off.
 
-This isn’t cool in the careerist way.
-It won’t magically scale.
-It won’t generalize itself into relevance.
-It’s not “AI” as advertised—it’s **computational natural selection with the training wheels ripped off**.
+### The Philosophy
 
-The deeper reason it matters—especially to someone who thinks in systems—is the muscle it trains:
+It is cool in the way modern stacks try to hide from you.
 
-You design the rules, then you let go of control.
+  * **Honesty:** Raw C. A tiny world. Evolution colliding with reality.
+  * **No Mercy:** You aren't tuning weights; you are evolving behavior. Failure isn't a low loss function; it's a crash, nonsense, or total extinction.
+  * **The Muscle:** You design the rules, then you let go of control. This is the lesson that applies to schedulers, compilers, and robotics.
 
-That lesson shows up everywhere real systems live:
-operating system schedulers,
-compilers,
-congestion control,
-robotics tuning.
+### Architecture
 
-Same pattern every time: define constraints, create feedback, and let the dynamics do the work.
+Everything happens at the intersection of a custom interpreter and optimization.
 
-So yes—it’s cool.
+  * **Language:** C (C99 standard)
+  * **Visualization:** SDL2
+  * **Dependencies:** None, other than the hardware you run it on.
 
-Cool like a hand-built VM.
-Cool like watching chaos slowly organize itself.
-Cool in the way modern stacks carefully try to hide from you.
+### Constraints
 
-Not trendy.
-Quietly respectable.
+Fitness is defined explicitly. Any sloppy thinking in the fitness function is punished immediately by the dynamics of the system. We define the constraints and the feedback loop, then let the chaos organize itself.
 
-Ready to run it?
+### Build & Run
 
-Dependencies: [SDL2]
+**Dependencies**
+Requires `SDL2`.
 
-```console
+  * Linux: `sudo apt-get install libsdl2-dev`
+  * macOS: `brew install sdl2`
+
+**Compiling**
+Don't overcomplicate it.
+
+```bash
 $ make
+```
+
+**Execution**
+Watch the chaos.
+
+```bash
 $ ./gp
 ```
 
-[SDL2]: https://www.libsdl.org/
+### Expectations
 
-No bragging. Just lessons.
+  * **Do not expect:** A chat bot, a predictable scaler, or a career boost.
+  * **Expect:** Solder fumes (metaphorically), memory management lessons, and watching a system barely function until it suddenly does.
+
+-----
+
+**Status:** *Quietly respectable.*
