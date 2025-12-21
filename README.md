@@ -1,4 +1,4 @@
-# A Genetic Program
+# The One that Survives - A Genetic Programming Simulator
 
 > "Darwin with a segfault."
 
